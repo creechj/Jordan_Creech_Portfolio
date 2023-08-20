@@ -1,23 +1,24 @@
-import React, { useState } from 'react';
-import NavTabs from './NavTabs';
-import Portfolio from './pages/Portfolio';
-import AboutMe from './pages/AboutMe';
-import Resume from './pages/Resume';
-import Contact from './pages/Contact';
+import React, { useState } from "react";
+import NavTabs from "./NavTabs";
+import Portfolio from "./pages/Portfolio";
+import AboutMe from "./pages/AboutMe";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 
 // state handling - sets Portfolio as default page to render
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Portfolio');
+  const [currentPage, setCurrentPage] = useState("AboutMe");
 
   // renders respective page based on state (from navigation selection)
   const renderPage = () => {
-    if (currentPage === 'Portfolio') {
+    if (currentPage === "Portfolio") {
       return <Portfolio />;
     }
-    if (currentPage === 'AboutMe') {
+    if (currentPage === "AboutMe") {
       return <AboutMe />;
     }
-    if (currentPage === 'Resume') {
+    if (currentPage === "Resume") {
       return <Resume />;
     }
     return <Contact />;
@@ -29,9 +30,16 @@ export default function PortfolioContainer() {
   return (
     <div>
       {/* displays NavTabs & passes attributes for currentPage state selection & handling of page change function */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <header>
+        <h1>Jordan Creech: Full-Stack Portfolio</h1>
+        <NavTabs
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
+      </header>
       {/* displays result of renderPage function (navigation selection) */}
       {renderPage()}
+      <Footer />
     </div>
   );
 }
