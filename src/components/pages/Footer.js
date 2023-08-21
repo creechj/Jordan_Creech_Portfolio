@@ -2,7 +2,7 @@ import React from 'react';
 // contact infomration with mailto form
 export default function Footer() {
   return (
-    <footer class="container d-flex justify-content-center" id="footer">
+    <footer class="mt-auto pb-1 container d-flex justify-content-center" id="footer">
       <div class="row">
       <div class="col d-flex justify-content-center">
         <a title="Jordan's Stack Overflow" class="nav-link" target="_blank" href="https://stackoverflow.com/users/21443556/criatura435"

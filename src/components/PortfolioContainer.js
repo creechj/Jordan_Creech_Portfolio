@@ -28,7 +28,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div class="d-flex flex-column min-vh-100">
       {/* displays NavTabs & passes attributes for currentPage state selection & handling of page change function */}
       <header>
         <h1>Jordan Creech: Full-Stack Portfolio</h1>

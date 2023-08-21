@@ -15,7 +15,7 @@ export default function Project() {
         </a>
         <figcaption>
           <details>
-            <summary></summary>
+            <summary> </summary>
             <p>
               
             </p>
