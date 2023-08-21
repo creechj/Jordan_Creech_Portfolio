@@ -3,7 +3,7 @@ import React from 'react';
 export default function Resume() {
   return (
     <section>
-      <h1>Resume</h1>
+      <h1 class="fs-4">Resume</h1>
       <figure>
       <a
           href=""

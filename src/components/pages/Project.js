@@ -1,23 +1,24 @@
 import React from "react";
 // portfolio page displaying projects with links & info
-export default function Project() {
+export default function Project({ project }) {
   return (
       <figure class="project">
         <a
-          href="https://project1team5-def011f76af0.herokuapp.com/"
+          href={project.imagelink}
           target="_blank"
         >
           <img
             class="projectimage img-fluid rounded mx-auto d-block"
-            src="assets/images/FueGoals_Screenshot.png"
+            src={project.imagesrc}
             alt="Image of project"
           />
         </a>
         <figcaption>
           <details>
-            <summary> </summary>
+            <summary>{project.title}</summary>
             <p>
-              
+              {project.description}
+              {project.repolink}
             </p>
           </details>
         </figcaption>

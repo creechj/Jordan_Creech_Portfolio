@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavTabs from "./NavTabs";
+import Nav from "./Nav";
 import Portfolio from "./pages/Portfolio";
 import AboutMe from "./pages/AboutMe";
 import Resume from "./pages/Resume";
@@ -28,11 +28,11 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div class="d-flex flex-column min-vh-100">
+    <div class="d-flex row min-vh-100">
       {/* displays NavTabs & passes attributes for currentPage state selection & handling of page change function */}
       <header>
-        <h1>Jordan Creech: Full-Stack Portfolio</h1>
-        <NavTabs
+        {/* <h1 class="fs-2 fw-bold m-6 text-nowrap col col-lg-6 col-md-12 col-sm-12">Jordan Creech: Full-Stack Portfolio</h1> */}
+        <Nav
           currentPage={currentPage}
           handlePageChange={handlePageChange}
         />
