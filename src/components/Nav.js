@@ -1,14 +1,18 @@
 import React from "react";
+
+
+
+
 // navigation tabs with handler for page changes
 function Nav({ currentPage, handlePageChange }) {
   return (
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="#"
+      <div class="container-fluid d-flex justify-content-end">
+          <a class="navbar-brand" href=""
             ><h1>Jordan Creech: Full-Stack Portfolio</h1></a
           >
           <button
-            class="navbar-toggler"
+            class="navbar-toggler align-self-end"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -20,7 +24,7 @@ function Nav({ currentPage, handlePageChange }) {
           </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul className="navbar-nav">
-        <li className="nav-item">
+        <li className="nav-item align-self-end">
           <a
             href="#aboutme"
             onClick={() => handlePageChange("AboutMe")}
@@ -33,7 +37,7 @@ function Nav({ currentPage, handlePageChange }) {
             About Me
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item align-self-end">
           <a
             href="#portfolio"
             onClick={() => handlePageChange("Portfolio")}
@@ -46,7 +50,7 @@ function Nav({ currentPage, handlePageChange }) {
             Portfolio
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item align-self-end">
           <a
             href="#contact"
             onClick={() => handlePageChange("Contact")}
@@ -59,7 +63,7 @@ function Nav({ currentPage, handlePageChange }) {
             Contact
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item align-self-end">
           <a
             href="#resume"
             onClick={() => handlePageChange("Resume")}
