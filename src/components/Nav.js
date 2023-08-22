@@ -8,7 +8,7 @@ function Nav({ currentPage, handlePageChange }) {
   return (
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid d-flex justify-content-end">
-          <a class="navbar-brand" href=""
+          <a class="navbar-brand position-left" href=""
             ><h1>Jordan Creech: Full-Stack Portfolio</h1></a
           >
           <button
