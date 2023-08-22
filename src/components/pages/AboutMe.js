@@ -3,7 +3,7 @@ import React from 'react';
 export default function AboutMe() {
   return (
     <div>
-      <h1 class="fs-4">About Me</h1>
+      <h2 class="fs-4">About Me</h2>
       <figure id="profilepicfig" class="col">
           {/* <!-- image linked to GitHub profile picture --> */}
           <img
